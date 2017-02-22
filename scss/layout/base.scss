@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: $background;
+    font-family: 'Roboto', sans-serif;
+}
+
+:global {
+    .container {
+        max-width: 950px;
+    }
+}

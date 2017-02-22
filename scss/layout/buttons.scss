@@ -1,0 +1,19 @@
+:global {
+    .btn {
+        color: white;
+        text-decoration: none;
+        padding: 5px 10px;
+        font-size: 16px;
+        border: 2px solid transparent;
+        min-width: 100px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .btn_green {
+        @include button-bg($green, white, $green);
+        &:hover {
+          border: 2px solid $green;
+        }
+    }
+}
