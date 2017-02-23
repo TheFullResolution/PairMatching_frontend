@@ -10,10 +10,12 @@ import {
 } from 'react-router-redux';
 
 import AuthReducer from 'Auth/AuthReducer';
+import PairsReducer from 'Pairs/PairsReducer';
 
 const reducers = {
     form: formReducer,
-    auth: AuthReducer
+    auth: AuthReducer,
+    pairs: PairsReducer
 };
 
 const routingMiddleware = routerMiddleware(browserHistory);

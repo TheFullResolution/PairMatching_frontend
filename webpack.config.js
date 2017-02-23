@@ -33,7 +33,8 @@ module.exports = {
             scss: resolve(__dirname, 'scss/'),
             app: resolve(__dirname, 'src/app/'),
             img: resolve(__dirname, 'img/'),
-            Auth: resolve(__dirname, 'src/components/Auth')
+            Auth: resolve(__dirname, 'src/components/Auth'),
+            Pairs: resolve(__dirname, 'src/components/Pairs')
         }
     },
 
