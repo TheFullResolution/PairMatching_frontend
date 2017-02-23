@@ -1,0 +1,44 @@
+@import "../base/_variables.scss";
+.form {
+    max-width: 400px;
+    margin: 20px auto;
+
+    fieldset {
+        border: none;
+        margin: 20px 0;
+    }
+
+    input,
+    label {
+        display: block;
+        width: 100%;
+    }
+
+    label {
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    input {
+        padding: 5px;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .formHeader {
+      text-align: center;
+    }
+
+    .formFooter {
+      text-align: center;
+    }
+
+    .error {
+      color: $red;
+      font-size: 0.9em;
+    }
+}

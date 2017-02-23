@@ -2,16 +2,18 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import ReduxThunk from 'redux-thunk';
 import { browserHistory } from 'react-router';
+import { reducer as formReducer } from 'redux-form';
 import {
     syncHistoryWithStore,
     routerReducer,
     routerMiddleware
 } from 'react-router-redux';
 
-
+import AuthReducer from 'Auth/AuthReducer';
 
 const reducers = {
-
+    form: formReducer,
+    auth: AuthReducer
 };
 
 const routingMiddleware = routerMiddleware(browserHistory);
@@ -32,3 +34,7 @@ const store = createStore(reducer, enhancer);
 export const history = syncHistoryWithStore(browserHistory, store);
 
 export default store;
+
+if (module.hot) {
+    module.hot.accept();
+}
