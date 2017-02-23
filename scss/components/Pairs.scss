@@ -1,0 +1,56 @@
+@import "../base/_variables.scss";
+
+.boxToday {
+    border: 2px transparent solid;
+    background-color: white;
+    max-width: 400px;
+    margin: 50px auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.pairContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    > div {
+        padding: 20px;
+        border: 2px white solid;
+        border-radius: 2px;
+        color: white;
+        margin: 10px;
+        background-color: $red;
+        min-width: 40%;
+        text-align: center;
+    }
+}
+
+.boxPast {
+    max-width: 800px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.pairPast {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.pairPastBoxes {
+    display: flex;
+    justify-content: space-between;
+
+    > div {
+        padding: 20px;
+        border: 2px white solid;
+        border-radius: 2px;
+        color: white;
+        margin: 10px;
+        background-color: $green;
+    }
+}

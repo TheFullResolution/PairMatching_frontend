@@ -1,7 +1,8 @@
 import {FETCHED_PAIRS} from 'Pairs/PairsActions';
 import {PAIR_CREATED} from 'Pairs/PairsActions';
 import {NOT_CHECKED} from 'Pairs/PairsActions';
-import {TODAY_CHECKED} from 'Pairs/PairsActions';
+import {TODAY_FOUND} from 'Pairs/PairsActions';
+import {NO_TODAY_PAIR} from 'Pairs/PairsActions';
 
 const initialState = {
   status: NOT_CHECKED,
@@ -21,10 +22,15 @@ export default(state = initialState, {type, payload}) => {
             status: PAIR_CREATED,
             today: Object.assign({}, payload)
         });
-        case TODAY_CHECKED:
+        case TODAY_FOUND:
         return Object.assign({}, state, {
-            status: TODAY_CHECKED,
-            today: Object.assign({}, payload)
+            status: TODAY_FOUND,
+            today:  Object.assign({}, payload)
+        });
+        case NO_TODAY_PAIR:
+        return Object.assign({}, state, {
+            status: NO_TODAY_PAIR,
+            today: null
         });
         case NOT_CHECKED:
         return Object.assign({}, state, {
