@@ -21,7 +21,6 @@ const PairActions = {
                     }
                 }
             }).then(response => {
-                console.log(response);
                 dispatch({type: FETCHED_PAIRS, payload: response.data});
             }).catch(error => {
                 console.log(error);
