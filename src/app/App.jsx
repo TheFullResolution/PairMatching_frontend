@@ -20,8 +20,14 @@ class App extends React.Component {
             display = (
                 <div>
                     <h2 className="textCenter">Hello, {name}</h2>
-                    <Pairs/>
+                    <Pairs />
                 </div>
+            );
+        } else {
+            display = (
+                <h2 className="textCenter">
+                    You have to login to see your buddy!
+                </h2>
             );
         }
         return (
