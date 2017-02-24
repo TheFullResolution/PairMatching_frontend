@@ -4,7 +4,7 @@ import style from 'scss/components/Pairs.scss';
 
 const PairsToday = props => (
     <div className={style.boxToday}>
-        <h2 className="textCenter">Today's Codding Buddies:</h2>
+        <h2 className="textCenter">Today's Coding Buddies:</h2>
         <div className={style.pairContainer}>
             {props.members.map((item, index) => {
                 return (
